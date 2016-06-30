@@ -17,6 +17,7 @@ const createStoreWithMiddleware = compose(applyMiddleware(...middleware),
 const store = createStoreWithMiddleware(reducer)
 
 store.dispatch(getAllProducts())
+//这是因为没用使用createStore,如果使用createStore,可以传入一个初始状态
 
 render(
   <Provider store={store}>
