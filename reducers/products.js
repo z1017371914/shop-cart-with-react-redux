@@ -13,7 +13,7 @@ function products(state, action) {
   }
 }
 
-function byId(state = {}, action) {
+function byIdss(state = {}, action) {
   switch (action.type) {
     case RECEIVE_PRODUCTS:
       return {
@@ -45,12 +45,12 @@ function visibleIds(state = [], action) {
 }
 
 export default combineReducers({
-  byId,
+  byIdss,
   visibleIds
 })
 
 export function getProduct(state, id) {
-  return state.byId[id]
+  return state.byIdss[id]
 }
 
 export function getVisibleProducts(state) {
