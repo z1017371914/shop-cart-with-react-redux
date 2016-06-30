@@ -1,7 +1,7 @@
 import shop from '../api/shop'
 import * as types from '../constants/ActionTypes'
 
-function receiveProducts(products) {
+export function receiveProducts(products) {
   return {
     type: types.RECEIVE_PRODUCTS,
     products: products
